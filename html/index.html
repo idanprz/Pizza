@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <style>
+        ul {
+            /* remove bullets */
+            list-style-type: none;
+            position: sticky;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 2px 16px;
+        }
+
+        li a:hover {
+            background-color: rgb(24, 95, 24);
+        }
+
+        #grad1 {
+            height: 200px;
+            background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(198, 216, 38));
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container__main {
+            /* Take the remaining height */
+            flex-grow: 1;
+
+            /* Layout the left sidebar, main content and right sidebar */
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container__left {
+            width: 5%;
+        }
+
+        .container__middle {
+            /* Take the remaining width */
+            flex-grow: 1;
+        }
+
+        .container__right {
+            width: 5%;
+        }
+    </style>
+
+
+</head>
+
+<body id="grad1">
+
+
+    <div class="container">
+        
+        <header>
+            <div><h1 style="text-align: center; text-shadow: 3px 5px gray;">Layout Pizzeria</h1></div>
+        </header>
+        <main class="container__main">
+            <!-- Left sidebar -->
+            <aside style="background-color: blue; writing-mode: vertical-lr; text-align: center;" class="container__left">left</aside>
+
+            <!-- Main content -->
+            <article class="container__middle">
+                <ul>
+                    <li><a href="location.html" target="main">Location</a></li>
+                    <li><a href="menu.html" target="main">Menu</a></li>
+                    <li><a href="order.html" target="main">Order</a></li>
+                    <li><a href="about.html" target="main">About</a></li>
+                </ul>
+
+                <iframe id="main" name="main" src="location.html" width="100%" height="500px"></iframe>
+            </article>
+
+            <!-- Right sidebar -->
+            <nav style="background-color: green; writing-mode: vertical-rl; text-align: center" class="container__right">right</nav>
+        </main>
+
+        <p style="text-align: center;">
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+            This is much text <br>
+        </p>
+
+        <footer>
+            <p>Author: Hege Refsnes<br>
+                <a href="mailto:hege@example.com">hege@example.com</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
